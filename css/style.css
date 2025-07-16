@@ -25,7 +25,7 @@
     display: inline-block;
 }
 .nav_logo {
-    height: 5.5rem;
+    height: 4.5rem;
     transition: all 0.3s;
     border-radius: 50%;
 }
@@ -85,12 +85,34 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
 }
+/* Animation (Automatic cycle) */
 h3 {
+    font-family: 'Arial Black', sans-serif;
+    font-size: 3rem;
+    text-align: center;
+    color: #f9f8f8;
+    animation: brighten 2s ease-in-out infinite alternate;
+    letter-spacing: 5px;
+    padding: 200px 0;
+}
+
+@keyframes brighten {
+    0% {
+        color: #f9f8f8;
+        text-shadow: none;
+    }
+    100% {
+        color: #ffffff;
+        text-shadow: 0 0 20px #ffffff, 0 0 40px #ffffff;
+    }
+}
+/* Text shadow */
+/* h3 {
     font-family: 'Arial Black', sans-serif;
     font-size: 4rem;
     text-align: center;
-    color: #f3eeee;
-    /* text-shadow: 
+    color: #f9f8f8;
+    text-shadow: 
         0 1px 0 #ccc,
         0 2px 0 #c9c9c9,
         0 3px 0 #bbb,
@@ -102,10 +124,10 @@ h3 {
         0 3px 5px rgba(0,0,0,.2),
         0 5px 10px rgba(0,0,0,.25),
         0 10px 10px rgba(0,0,0,.2),
-        0 20px 20px rgba(0,0,0,.15); */
+        0 20px 20px rgba(0,0,0,.15);
     letter-spacing: 5px;
     padding: 200px 0;
-}
+} */
 header p {
     font-size: 14px;
     color: white;
