@@ -1,0 +1,27 @@
+@media(max-width: 768px){
+
+    header h1 {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    #features{
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        padding-top: 20px;
+    }
+    #features .feature-img, #features .feature-copy{
+        width: 100%;
+    }
+}
+
+/* Media query for mobile screens */
+@media screen and (max-width: 768px) {
+    .nav_logo {
+        height: 3.5rem; /* Smaller logo for mobile */
+    }
+    
+    .logo a {
+        font-size: 16px; /* Smaller font size for mobile */
+    }
+}
